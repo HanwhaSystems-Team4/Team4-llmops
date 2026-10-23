@@ -1,0 +1,10 @@
+# Python 3.12 가상환경에서 설치(이 맥 기본 python3는 3.14 — AutoGluon이 아직 지원하지 않을 수 있음)
+#   python3.12 -m venv .venv && source .venv/bin/activate
+#   pip install -r requirements.txt
+#   jupyter lab   (examples/ 폴더에서 열기)
+autogluon.tabular[all]>=1.2,<2   # LightGBM · CatBoost · XGBoost · RandomForest · 신경망, pandas · scikit-learn 함께 설치됨
+scikit-learn                     # 분석 노트북(permutation importance · 결정 트리) — 버전은 autogluon이 정함
+matplotlib>=3.7
+seaborn>=0.13
+jupyterlab>=4
+ipykernel>=6
